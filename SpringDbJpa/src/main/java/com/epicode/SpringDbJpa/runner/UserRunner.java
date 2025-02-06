@@ -46,8 +46,8 @@ public class UserRunner implements CommandLineRunner {
 
         //userService.deleteUser(u);
 
-        List<User> lista = userService.getAll();
-        lista.forEach(System.out::println);
+        //List<User> lista = userService.getAll();
+        //lista.forEach(System.out::println);
 
     }
 }
