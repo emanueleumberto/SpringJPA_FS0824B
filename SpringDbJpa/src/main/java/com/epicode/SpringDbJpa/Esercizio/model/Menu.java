@@ -21,7 +21,7 @@ public class Menu {
     private long id;
     private String nome;
 
-    @OneToMany(mappedBy = "menu")
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "menu")
     private List<Article> menuList = new ArrayList<Article>();
 
     public void printMenu() {

@@ -63,7 +63,15 @@ public class ProdottiService {
     }
 
     public Topping getTopping(String name) {
-        return prodottiDAO.findByName(name);
+        return (Topping) prodottiDAO.findByName(name);
+    }
+
+    public Pizza getPizza(String name) {
+        return (Pizza) prodottiDAO.findByName(name);
+    }
+
+    public Drink getDrink(String name) {
+        return (Drink) prodottiDAO.findByName(name);
     }
 
 }

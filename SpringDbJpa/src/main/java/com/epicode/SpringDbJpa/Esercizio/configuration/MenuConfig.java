@@ -53,13 +53,13 @@ public class MenuConfig {
     @Bean(name = "menu")
     public Menu menuBean() {
         Menu menu = new Menu();
-        menu.getMenuList().add(pizzaMargheritaBean());
-        menu.getMenuList().add(pizzaSalamiBean());
-        menu.getMenuList().add(toppingTomato());
-        menu.getMenuList().add(toppingCheese());
-        menu.getMenuList().add(toppingSalami());
-        menu.getMenuList().add(waterDrink());
-        menu.getMenuList().add(lemonadeDrink());
+        //menu.getMenuList().add(pizzaMargheritaBean());
+        //menu.getMenuList().add(pizzaSalamiBean());
+        //menu.getMenuList().add(toppingTomato());
+        //menu.getMenuList().add(toppingCheese());
+        //menu.getMenuList().add(toppingSalami());
+        //menu.getMenuList().add(waterDrink());
+        //menu.getMenuList().add(lemonadeDrink());
         return menu;
     }
 

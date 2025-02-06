@@ -7,5 +7,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ArticoloDAORepository extends JpaRepository<Article, Long> {
-    Topping findByName(String name);
+    Article findByName(String name);
 }

@@ -22,13 +22,15 @@ public abstract class Article {
     protected long id;
     protected int calories;
     protected double price;
+    protected String name;
 
     @ManyToOne
     @JoinColumn(name = "menu_id")
     protected Menu menu;
 
-    public Article(int calories, double price) {
-        this.calories = calories;
+    public Article(String name, double price, int calories) {
+        this.name = name;
         this.price = price;
+        this.calories = calories;
     }
 }

@@ -15,8 +15,7 @@ import java.util.List;
 @DiscriminatorValue("pizza")
 public class Pizza extends Article {
 
-    private String name;
-    @ManyToMany
+    @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
             name = "topping_pizza",
             joinColumns = @JoinColumn(name = "pazza_id"),
@@ -29,7 +28,6 @@ public class Pizza extends Article {
     }
 
     public Pizza(int calories, double price, String name) {
-        super(calories, price);
-        this.name = name;
+        super(name, price, calories);
     }
 }
